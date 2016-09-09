@@ -1,0 +1,14 @@
+<%= form_for posts_path do |f| %>
+ タイトル
+<%= f.text_field :title, class: "..." %>
+ 本文
+<%= f.text_field :body, class: "..." %>
+<%= f.submit "保存", class: "..." %>
+<% end %>
+
+<!-- # <h1>新規投稿</h1>
+# <%= form_tag posts_path do %>
+# <div> <p>タイトル</p><input type="text" name="title"></div>
+# <div><p>本文</p><textarea name="body"></textarea></div>
+# <input type="submit" value="投稿する">
+<% end %> --> 
